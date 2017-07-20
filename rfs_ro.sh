@@ -14,6 +14,6 @@ umount /boot
 mount /dev/mmcblk0p1 /boot
 sed -i "s,init=/sbin/init,init=/sbin/overlayRoot.sh," /boot/cmdline.txt
 
-echo "The system will reboot in 5 seconds..."
-sleep 5
-shutdown -r now
+#echo "The system will reboot in 5 seconds..."
+#sleep 5
+#shutdown -r now
