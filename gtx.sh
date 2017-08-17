@@ -8,7 +8,7 @@ if [ $UID != 0 ]; then
     exit 1
 fi
 
-echo "lora_gateway / util_tx_test"
+echo "1GATE / lora_gateway / util_tx_test"
 
 if [ $(systemctl -q is-active lorawan-server) ]; then
 	systemctl stop lorawan-server
@@ -33,6 +33,6 @@ fi
 cd /opt/semtech/lora_gateway/util_tx_test
 ./util_tx_test -f 868.100 -r 1257
 
-#echo "The system will reboot in 5 seconds..."
-#sleep 5
-#shutdown -r now
+echo "The system will reboot in 5 seconds..."
+sleep 5
+shutdown -r now
