@@ -30,6 +30,9 @@ if [ $(systemctl -q is-active ttn) ]; then
 	exit 1
 fi
 
+cd /opt/semtech/lora_gateway
+./reset_lgw.sh start 25
+
 cd /opt/semtech/lora_gateway/util_tx_test
 ./util_tx_test -f 868.100 -r 1257
 
