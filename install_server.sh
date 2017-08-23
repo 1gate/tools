@@ -17,11 +17,8 @@ cd /home/ogate/1G-LWS-COM-868-XXX/semtech
 ./install_semtech.sh
 cd /home/ogate/1G-LWS-COM-868-XXX/gotthardp
 ./install_lws.sh
-cd /home/ogate/tools
-./rfs_ro.sh
-cd
-history -c
-history -w
+#cd /home/ogate/tools
+#./rfs_ro.sh
 
 echo "The system will reboot in 5 seconds..."
 sleep 5
