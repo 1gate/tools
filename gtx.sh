@@ -36,6 +36,8 @@ cd /opt/semtech/lora_gateway
 cd /opt/semtech/lora_gateway/util_tx_test
 ./util_tx_test -f 868.100 -r 1257
 
-echo "The system will reboot in 5 seconds..."
-sleep 5
-shutdown -r now
+cd
+
+#echo "The system will reboot in 5 seconds..."
+#sleep 5
+#shutdown -r now
