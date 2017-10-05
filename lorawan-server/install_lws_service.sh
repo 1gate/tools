@@ -10,8 +10,8 @@ fi
 
 echo "Install lorawan-server as systemd service"
 
-cp /tools/lorawan-server/lorawan-server.service /etc/systemd/system/
+cp tools/lorawan-server/lorawan-server.service /etc/systemd/system/
 
-echo "The system will reboot in 5 seconds..."
-sleep 5
-shutdown -r now
+#echo "The system will reboot in 5 seconds..."
+#sleep 5
+#shutdown -r now
