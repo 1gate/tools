@@ -13,7 +13,7 @@ echo "Install Mosquitto as systemd service"
 systemctl stop mosquitto
 update-rc.d mosquitto remove
 rm /etc/init.d/mosquitto
-cp /tools/mosquitto/mosquitto.service /etc/systemd/system/
+cp tools/mosquitto/mosquitto.service /etc/systemd/system/
 systemctl daemon-reload
 systemctl enable mosquitto
 systemctl start mosquitto
