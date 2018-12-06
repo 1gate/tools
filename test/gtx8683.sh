@@ -10,24 +10,20 @@ fi
 
 echo "1GATE / lora_gateway / util_tx_test"
 
-if [ $(systemctl -q is-active lorawan-server) ]; then
+if [ $(systemctl is-active lorawan-server) ]; then
 	systemctl stop lorawan-server
-	exit 1
 fi
 
-if [ $(systemctl -q is-active loriot) ]; then
+if [ $(systemctl is-active loriot) ]; then
 	systemctl stop loriot
-	exit 1
 fi
 
-if [ $(systemctl -q is-active semtech) ]; then
+if [ $(systemctl is-active semtech) ]; then
 	systemctl stop semtech
-	exit 1
 fi
 
-if [ $(systemctl -q is-active ttn) ]; then
+if [ $(systemctl is-active ttn) ]; then
 	systemctl stop ttn
-	exit 1
 fi
 
 cd /opt/semtech/lora_gateway
