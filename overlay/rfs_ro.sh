@@ -10,8 +10,7 @@ fi
 
 echo "Set Root File System in Read Only Mode"
 
-umount /boot
-mount /dev/mmcblk0p1 /boot
+mount -o remount,rw /boot
 sed -i "s,init=/sbin/init,init=/sbin/overlayRoot.sh," /boot/cmdline.txt
 
 #echo "The system will reboot in 5 seconds..."
